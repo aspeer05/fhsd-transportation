@@ -77,7 +77,7 @@ function BannerImg({alt}:{alt?:string}){
   const src = candidates[idx] || '';
   if (failed) {
     return (
-      <div style={{width:'100%', height:'250px', backgroundColor:NAVY, display:'flex', flexDirection:'column', justifyContent:'center', paddingLeft:'2rem'}} aria-label=\"FHSD banner fallback\">
+      <div style={{width:'100%', height:'250px', backgroundColor:NAVY, display:'flex', flexDirection:'column', justifyContent:'center', paddingLeft:'2rem'}} aria-label={"FHSD banner fallback"}>
         <h2 style={{color:GRAY, fontFamily:'Raleway', fontWeight:700, margin:0, fontSize:'1rem'}}>Francis Howell School District<br/>Transportation Department</h2>
         <h1 style={{fontFamily:'Raleway', fontWeight:900, margin:0, fontSize:'2rem'}}>
           <span style={{color:GOLD}}>marketing </span>
@@ -173,7 +173,7 @@ function Home() {
           borderRadius: '12px',
           padding: '1rem 1.25rem',
           marginTop: '1.25rem',
-          boxShadow: \`inset 8px 0 0 \${NAVY}, rgba(0,0,0,0.05) 0px 4px 12px\`
+          boxShadow: {`inset 8px 0 0 ${NAVY}, rgba(0,0,0,0.05) 0px 4px 12px`}
         }}
       >
         <h3 className={"font-subhead"} style={{margin:'0 0 .35rem 0'}}>PURPOSE</h3>
