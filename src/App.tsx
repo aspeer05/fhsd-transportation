@@ -26,12 +26,12 @@ function AppShell() {
       <TopNav />
       <main>
         <Routes>
-          <Route path=\"/\" element={<Home />} />
-          <Route path=\"/recruitment\" element={<Recruitment />} />
-          <Route path=\"/training\" element={<Training />} />
-          <Route path=\"/retention\" element={<Retention />} />
-          <Route path=\"/data\" element={<DataEval />} />
-          <Route path=\"*\" element={<NotFound />} />
+          <Route path={"/}" element={<Home />} />
+          <Route path={"/recruitment"} element={<Recruitment />} />
+          <Route path={"/training"} element={<Training />} />
+          <Route path={"/retention"} element={<Retention />} />
+          <Route path={"/data"} element={<DataEval />} />
+          <Route path={"*"} element={<NotFound />} />
         </Routes>
       </main>
       <Footer />
@@ -94,13 +94,13 @@ function BannerImg({alt}:{alt?:string}){
 function TopNav(){
   const { pathname } = useLocation();
   return (
-    <nav className=\"nav\" style={{background: BLUE}}>
-      <div className=\"section\" style={{display:'flex', flexWrap:'wrap', gap:'.5rem'}}>
-        <NavItem to=\"/\" label=\"Home\" current={pathname === '/'} />
-        <NavItem to=\"/recruitment\" label=\"Recruitment & Outreach\" current={pathname === '/recruitment'} />
-        <NavItem to=\"/training\" label=\"Training & Growth\" current={pathname === '/training'} />
-        <NavItem to=\"/retention\" label=\"Retention & Culture\" current={pathname === '/retention'} />
-        <NavItem to=\"/data\" label=\"Data & Evaluation\" current={pathname === '/data'} />
+    <nav className={"nav"} style={{background: BLUE}}>
+      <div className={"section"} style={{display:'flex', flexWrap:'wrap', gap:'.5rem'}}>
+        <NavItem to={"/"} label={"Home"} current={pathname === '/'} />
+        <NavItem to={"/recruitment"} label={"Recruitment & Outreach"} current={pathname === '/recruitment'} />
+        <NavItem to={"/training"} label={"Training & Growth"} current={pathname === '/training'} />
+        <NavItem to={"/retention"} label={"Retention & Culture"} current={pathname === '/retention'} />
+        <NavItem to={"/data"} label={"Data & Evaluation"} current={pathname === '/data'} />
       </div>
     </nav>
   );
@@ -108,7 +108,7 @@ function TopNav(){
 
 function NavItem({to, label, current}:{to:string; label:string; current?:boolean;}){
   return (
-    <Link to={to} aria-current={current ? 'page' : undefined} className=\"font-subhead\" style={{fontSize:'.9rem'}}>
+    <Link to={to} aria-current={current ? 'page' : undefined} className={"font-subhead"} style={{fontSize:'.9rem'}}>
       {label}
     </Link>
   );
@@ -117,20 +117,20 @@ function NavItem({to, label, current}:{to:string; label:string; current?:boolean
 function FocusCard({title, text}:{title:string; text:string;}) {
   return (
     <div style={{padding:'0.25rem 0'}}>
-      <h3 className=\"font-subhead\" style={{color: NAVY}}>{title}</h3>
-      <p className=\"font-body\">{text}</p>
+      <h3 className=["font-subhead"} style={{color: NAVY}}>{title}</h3>
+      <p className={"font-body"}>{text}</p>
     </div>
   );
 }
 
 function SectionPage({title, bullets}:{title:string; bullets:string[];}){
   return (
-    <motion.section className=\"section page\" initial={{opacity:0, y:8}} animate={{opacity:1, y:0}}>
+    <motion.section className={"section page"} initial={{opacity:0, y:8}} animate={{opacity:1, y:0}}>
       <header style={{marginBottom:'1rem'}}>
-        <h2 className=\"font-subhead\" style={{color: NAVY, fontSize:'2rem'}}>{title}</h2>
-        <span className=\"bar\" />
+        <h2 className={"font-subhead"} style={{color: NAVY, fontSize:'2rem'}}>{title}</h2>
+        <span className={"bar}" />
       </header>
-      <ul className=\"font-body\" style={{lineHeight:1.8, paddingLeft:'1rem', listStyle:'disc'}}>
+      <ul className={"font-body"} style={{lineHeight:1.8, paddingLeft:'1rem', listStyle:'disc'}}>
         {bullets.map((b, i) => {
           const parts = b.split(';').map(s => s.trim()).filter(Boolean);
           const main = parts.shift() || '';
@@ -153,13 +153,13 @@ function SectionPage({title, bullets}:{title:string; bullets:string[];}){
 
 function Home() {
   return (
-    <motion.section className=\"section\" initial={{opacity:0, y:8}} animate={{opacity:1, y:0}}>
-      <h2 className=\"font-heading\" style={{color: NAVY, textTransform:'uppercase', fontSize:'2rem'}}>OUR FOCUS</h2>
-      <span className=\"bar\" />
-      <div className=\"focus-grid\" style={{marginTop:'1rem'}}>
-        <FocusCard title=\"STUDENTS\" text=\"Every decision centers on their safety, success, and future.\" />
-        <FocusCard title=\"SAFETY\" text=\"Attention to detail keeps our students and staff safe every day.\" />
-        <FocusCard title=\"SERVICE\" text=\"We act with kindness, integrity, and professionalism as role models in our community.\" />
+    <motion.section className={"section"} initial={{opacity:0, y:8}} animate={{opacity:1, y:0}}>
+      <h2 className={"font-heading"} style={{color: NAVY, textTransform:'uppercase', fontSize:'2rem'}}>OUR FOCUS</h2>
+      <span className={"bar"} />
+      <div className={"focus-grid"} style={{marginTop:'1rem'}}>
+        <FocusCard title={"STUDENTS"} text={"Every decision centers on their safety, success, and future."} />
+        <FocusCard title={"SAFETY"} text={"Attention to detail keeps our students and staff safe every day."} />
+        <FocusCard title={"SERVICE"} text={"We act with kindness, integrity, and professionalism as role models in our community."} />
       </div>
 
       <motion.div
@@ -176,13 +176,13 @@ function Home() {
           boxShadow: \`inset 8px 0 0 \${NAVY}, rgba(0,0,0,0.05) 0px 4px 12px\`
         }}
       >
-        <h3 className=\"font-subhead\" style={{margin:'0 0 .35rem 0'}}>PURPOSE</h3>
-        <p className=\"font-body\" style={{margin:0, lineHeight:1.65}}>
+        <h3 className={"font-subhead"} style={{margin:'0 0 .35rem 0'}}>PURPOSE</h3>
+        <p className={"font-body"} style={{margin:0, lineHeight:1.65}}>
           Build a safe, student-centered, service-driven transportation program by recruiting great people, growing skills, strengthening culture, and using data to continually improve outcomes for students and families.
         </p>
       </motion.div>
 
-      <p className=\"font-body\" style={{marginTop:'1rem', lineHeight:1.65, textAlign:'left'}}>
+      <p className={"font-body"} style={{marginTop:'1rem', lineHeight:1.65, textAlign:'left'}}>
         <span style={{color:BLUE, fontWeight:'bold'}}>Francis Howell Transportation</span> connects home, school, and community. What we do matters — we care, we serve, and we shape the future. <span style={{color:BLUE, fontWeight:'bold'}}>#ONEHOWELL</span>
       </p>
     </motion.section>
@@ -192,7 +192,7 @@ function Home() {
 function Recruitment(){
   return (
     <SectionPage
-      title=\"Recruitment & Outreach\"
+      title={"Recruitment & Outreach"}
       bullets={[
         'Promote the essential role transportation plays in daily attendance and student success; Spotlight relationships drivers build with students; Connect transportation to daily attendance outcomes',
         'Post weekly across district channels to showcase services, drivers, and safety practices; Photos and short profiles; Day-in-the-life reels; Safety tips and quick facts',
@@ -211,7 +211,7 @@ function Recruitment(){
 function Training(){
   return (
     <SectionPage
-      title=\"Training & Growth\"
+      title={"Training & Growth"}
       bullets={[
         'Adopt a continuous growth mindset; Grounded in MOAPT, NAPT, MUSIC; Annual compliance refreshers',
         'Strengthen professional communication; With students; With parents; With school staff',
@@ -230,7 +230,7 @@ function Training(){
 function Retention(){
   return (
     <SectionPage
-      title=\"Retention & Culture\"
+      title={"Retention & Culture"}
       bullets={[
         'Lead with recognition; Open meetings with shout-outs; Peer-to-peer appreciation; Celebrate milestones',
         'Set high and equitable standards; Clear expectations for all roles; Support plans when needed; Fair and consistent accountability',
@@ -249,7 +249,7 @@ function Retention(){
 function DataEval(){
   return (
     <SectionPage
-      title=\"Data & Evaluation\"
+      title={"Data & Evaluation"}
       bullets={[
         'Benchmark compensation; Regional salary study; Benefits comparison; Update annually',
         'Gather satisfaction data twice a year; Staff survey; Parent survey; Student survey',
@@ -265,10 +265,10 @@ function DataEval(){
 function NotFound(){
   const { pathname } = useLocation();
   return (
-    <motion.section className=\"section\" initial={{opacity:0}} animate={{opacity:1}}>
-      <h2 className=\"font-heading\" style={{color: NAVY}}>Page Not Found</h2>
-      <p className=\"font-body\">The path <code>{pathname}</code> does not exist.</p>
-      <p className=\"font-body\"><Link to=\"/\">Go back Home</Link></p>
+    <motion.section className={"section"} initial={{opacity:0}} animate={{opacity:1}}>
+      <h2 className={"font-heading}" style={{color: NAVY}}>Page Not Found</h2>
+      <p className={"font-body"}>The path <code>{pathname}</code> does not exist.</p>
+      <p className={"font-body"}><Link to={"/"}>Go back Home</Link></p>
     </motion.section>
   );
 }
@@ -276,9 +276,9 @@ function NotFound(){
 function Footer(){
   return (
     <footer style={{background: NAVY, color:'white', marginTop: '2rem'}}>
-      <div className=\"section\" style={{display:'flex', flexDirection:'column', gap:'.25rem', alignItems:'center'}}>
-        <small className=\"font-body\">© {new Date().getFullYear()} Francis Howell School District – Transportation Department</small>
-        <small className=\"font-body\" style={{color:GRAY, fontStyle:'italic'}}>Written By: Dr. Scott Speer</small>
+      <div className={"section"} style={{display:'flex', flexDirection:'column', gap:'.25rem', alignItems:'center'}}>
+        <small className={"font-body"}>© {new Date().getFullYear()} Francis Howell School District – Transportation Department</small>
+        <small className={"font-body"} style={{color:GRAY, fontStyle:'italic'}}>Written By: Dr. Scott Speer</small>
       </div>
     </footer>
   );
