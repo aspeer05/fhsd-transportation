@@ -20,7 +20,7 @@ export default function FHSDTransportation() {
 function AppShell() {
   useDevSanityChecks();
   return (
-    <div className=\"min-h-screen bg-white text-black\">
+    <div className={"min-h-screen bg-white text-black}">
       <BrandFonts />
       <Header />
       <TopNav />
