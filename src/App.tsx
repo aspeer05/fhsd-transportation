@@ -121,7 +121,7 @@ function NavItem({to, label, current}:{to:string; label:string; current?:boolean
 function FocusCard({title, text}:{title:string; text:string;}) {
   return (
     <div style={{padding:'0.25rem 0'}}>
-      <h3 className=["font-subhead"} style={{color: NAVY}}>{title}</h3>
+      <h3 className={"font-subhead"} style={{color: NAVY}}>{title}</h3>
       <p className={"font-body"}>{text}</p>
     </div>
   );
