@@ -64,7 +64,7 @@ function Header(){
   return (
     <motion.header style={{ backgroundColor: NAVY, position:'relative', color:'white' }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6 }}>
       <motion.div style={{ y, opacity: imgOpacity }}>
-        <BannerImg alt=\"FHSD Transportation banner\" />
+        <BannerImg alt={"FHSD Transportation banner"} />
       </motion.div>
     </motion.header>
   );
