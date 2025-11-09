@@ -177,7 +177,7 @@ function Home() {
           borderRadius: '12px',
           padding: '1rem 1.25rem',
           marginTop: '1.25rem',
-          boxShadow: {`inset 8px 0 0 ${NAVY}, rgba(0,0,0,0.05) 0px 4px 12px`}
+          boxShadow: `inset 8px 0 0 ${NAVY}, rgba(0,0,0,0.05) 0px 4px 12px`
         }}
       >
         <h3 className={"font-subhead"} style={{margin:'0 0 .35rem 0'}}>PURPOSE</h3>
