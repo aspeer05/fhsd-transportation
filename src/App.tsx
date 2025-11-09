@@ -39,22 +39,26 @@ function AppShell() {
   );
 }
 
-function BrandFonts() {
-  return (
-    <style>{`
-      @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&family=Open+Sans:wght@400;600&display=swap');
-      :root{ --fh-primary:${NAVY}; --fh-secondary:${BLUE}; --fh-accent:${GOLD}; --fh-neutral:${GRAY}; }
-      .font-heading{ font-family:'Raleway', sans-serif; font-weight:900; }
-      .font-subhead{ font-family:'Raleway', sans-serif; font-weight:900; letter-spacing:.06em; text-transform:uppercase; font-size:1.1rem; }
-      .font-body{ font-family:'Open Sans',sans-serif; }
-      .focus-grid{ display:grid; grid-template-columns:1fr; gap:1rem; }
-      @media (min-width:768px){ .focus-grid{ grid-template-columns:repeat(3,1fr); } }
-      .bar{ height:6px; background:var(--fh-accent); width:100%; margin:.5rem 0 1rem; display:block; }
-      .section{ padding:1.25rem; max-width:960px; margin:0 auto; }
-      .nav a{ color:white; opacity:.95; padding:.6rem .8rem; border-radius:.5rem; text-decoration:none; }
-      .nav a[aria-current='page']{ background:rgba(255,255,255,.15); }
-    `}}</style>
-  );
+function BrandFonts({ NAVY, BLUE, GOLD, GRAY }) {
+  const css = `
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&family=Open+Sans:wght@400;600&display=swap');
+    :root {
+      --fh-primary: ${NAVY};
+      --fh-secondary: ${BLUE};
+      --fh-accent: ${GOLD};
+      --fh-neutral: ${GRAY};
+    }
+    .font-heading{ font-family:'Raleway', sans-serif; font-weight:900; }
+    .font-subhead{ font-family:'Raleway', sans-serif; font-weight:900; letter-spacing:.06em; text-transform:uppercase; font-size:1.1rem; }
+    .font-body{ font-family:'Open Sans',sans-serif; }
+    .focus-grid{ display:grid; grid-template-columns:1fr; gap:1rem; }
+    @media (min-width:768px){ .focus-grid{ grid-template-columns:repeat(3,1fr); } }
+    .bar{ height:6px; background:var(--fh-accent); width:100%; margin:.5rem 0 1rem; display:block; }
+    .section{ padding:1.25rem; max-width:960px; margin:0 auto; }
+    .nav a{ color:white; opacity:.95; padding:.6rem .8rem; border-radius:.5rem; text-decoration:none; }
+    .nav a[aria-current='page']{ background:rgba(255,255,255,.15); }
+  `;
+  return <style>{css}</style>;
 }
 
 function Header(){
