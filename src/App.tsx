@@ -41,7 +41,7 @@ function AppShell() {
 
 function BrandFonts() {
   return (
-    <style>{\`
+    <style>{`
       @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&family=Open+Sans:wght@400;600&display=swap');
       :root{ --fh-primary:\${NAVY}; --fh-secondary:\${BLUE}; --fh-accent:\${GOLD}; --fh-neutral:\${GRAY}; }
       .font-heading{ font-family:'Raleway', sans-serif; font-weight:900; }
