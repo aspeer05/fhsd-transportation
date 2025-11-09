@@ -43,7 +43,7 @@ function BrandFonts() {
   return (
     <style>{`
       @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&family=Open+Sans:wght@400;600&display=swap');
-      :root{ --fh-primary:\${NAVY}; --fh-secondary:\${BLUE}; --fh-accent:\${GOLD}; --fh-neutral:\${GRAY}; }
+      :root{ --fh-primary:${NAVY}; --fh-secondary:${BLUE}; --fh-accent:${GOLD}; --fh-neutral:${GRAY}; }
       .font-heading{ font-family:'Raleway', sans-serif; font-weight:900; }
       .font-subhead{ font-family:'Raleway', sans-serif; font-weight:900; letter-spacing:.06em; text-transform:uppercase; font-size:1.1rem; }
       .font-body{ font-family:'Open Sans',sans-serif; }
