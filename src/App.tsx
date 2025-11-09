@@ -26,7 +26,7 @@ function AppShell() {
       <TopNav />
       <main>
         <Routes>
-          <Route path={"/}" element={<Home />} />
+          <Route path={"/"} element={<Home />} />
           <Route path={"/recruitment"} element={<Recruitment />} />
           <Route path={"/training"} element={<Training />} />
           <Route path={"/retention"} element={<Retention />} />
