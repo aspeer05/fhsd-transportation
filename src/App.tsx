@@ -53,7 +53,7 @@ function BrandFonts() {
       .section{ padding:1.25rem; max-width:960px; margin:0 auto; }
       .nav a{ color:white; opacity:.95; padding:.6rem .8rem; border-radius:.5rem; text-decoration:none; }
       .nav a[aria-current='page']{ background:rgba(255,255,255,.15); }
-    \`}</style>
+    `}}</style>
   );
 }
 
