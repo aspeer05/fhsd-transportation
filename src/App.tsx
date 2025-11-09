@@ -132,7 +132,7 @@ function SectionPage({title, bullets}:{title:string; bullets:string[];}){
     <motion.section className={"section page"} initial={{opacity:0, y:8}} animate={{opacity:1, y:0}}>
       <header style={{marginBottom:'1rem'}}>
         <h2 className={"font-subhead"} style={{color: NAVY, fontSize:'2rem'}}>{title}</h2>
-        <span className={"bar}" />
+        <span className={"bar"} />
       </header>
       <ul className={"font-body"} style={{lineHeight:1.8, paddingLeft:'1rem', listStyle:'disc'}}>
         {bullets.map((b, i) => {
