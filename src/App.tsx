@@ -270,7 +270,7 @@ function NotFound(){
   const { pathname } = useLocation();
   return (
     <motion.section className={"section"} initial={{opacity:0}} animate={{opacity:1}}>
-      <h2 className={"font-heading}" style={{color: NAVY}}>Page Not Found</h2>
+      <h2 className={"font-heading"} style={{color: NAVY}}>Page Not Found</h2>
       <p className={"font-body"}>The path <code>{pathname}</code> does not exist.</p>
       <p className={"font-body"}><Link to={"/"}>Go back Home</Link></p>
     </motion.section>
