@@ -298,5 +298,5 @@ function useDevSanityChecks(){
     }catch(e){
       console.warn('Sanity check warning:', e);
     }
-  },[]);
+  } );
 }
