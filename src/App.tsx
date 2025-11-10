@@ -39,7 +39,7 @@ function AppShell() {
   );
 }
 
-function BrandFonts({ NAVY, BLUE, GOLD, GRAY }) {
+function BrandFonts() {
   const css = `
     /* Import Google Fonts for Raleway regular/bold and Open Sans */
     @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
@@ -116,7 +116,6 @@ function BrandFonts({ NAVY, BLUE, GOLD, GRAY }) {
   return <style>{css}</style>;
 }
 
-export default BrandFonts;
 
 function Header(){
   const { scrollY } = useScroll();
