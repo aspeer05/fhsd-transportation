@@ -218,9 +218,9 @@ function Home() {
       <h2 className={"font-heading"} style={{color: NAVY, textTransform:'uppercase', fontSize:'2rem'}}>OUR FOCUS</h2>
       <span className={"bar"} />
       <div className={"focus-grid"} style={{marginTop:'1rem'}}>
-        <FocusCard title={"STUDENTS"} text={"Every decision centers on their safety, success, and future."} />
-        <FocusCard title={"SAFETY"} text={"Attention to detail keeps our students and staff safe every day."} />
-        <FocusCard title={"SERVICE"} text={"We act with kindness, integrity, and professionalism as role models in our community."} />
+        <FocusCard title={"STUDENTS"} text={"Every decision centers on their safety, success, and futures."} />
+        <FocusCard title={"SAFETY"} text={"Attention to details keep our students and staff safe every day."} />
+        <FocusCard title={"SERVICE"} text={"We act with kindness, integrity, and professionalism as role models."} />
       </div>
 
       <motion.div
@@ -239,12 +239,12 @@ function Home() {
       >
         <h3 className={"font-subhead"} style={{margin:'0 0 .35rem 0'}}>PURPOSE</h3>
         <p className={"font-body"} style={{margin:0, lineHeight:1.65}}>
-          Build a safe, student-centered, service-driven transportation program by recruiting great people, growing skills, strengthening culture, and using data to continually improve outcomes for students and families.
+          Build a safe, student-centered, service-driven transportation program by recruiting great people, growing skills, strengthening culture and using data to continually improve outcomes.
         </p>
       </motion.div>
 
       <p className={"font-body"} style={{marginTop:'1rem', lineHeight:1.65, textAlign:'left'}}>
-        <span style={{color:BLUE, fontWeight:'bold'}}>Francis Howell Transportation</span> connects home, school, and community. What we do matters — we care, we serve, and we shape the future. <span style={{color:BLUE, fontWeight:'bold'}}>#ONEHOWELL</span>
+        <span style={{color:BLUE, fontWeight:'bold'}}>Francis Howell Transportation</span> connects home, school and community. What we do matters — we care; we serve, and we shape the future. <span style={{color:BLUE, fontWeight:'bold'}}>#ONEHOWELL</span>
       </p>
     </motion.section>
   );
@@ -256,12 +256,12 @@ function Recruitment(){
       title={"Recruitment & Outreach"}
       bullets={[
         'Promote the essential role transportation plays in daily attendance and student success; Spotlight relationships drivers build with students; Connect transportation to daily attendance outcomes',
-        'Post weekly across district channels to showcase services, drivers, and safety practices; Photos and short profiles; Day-in-the-life reels; Safety tips and quick facts',
+        'Post weekly across district channels to showcase services, drivers and safety practices; Photos and short profiles; Day-in-the-life reels; Safety tips and quick facts',
         'Target recruitment to key demographics; Mothers of kindergarteners; Retirees; Community volunteers',
         'Highlight why FHSD is a great place to work; Competitive pay and benefits; Schedule flexibility; Paid training provided',
-        'Coordinate a Ride-and-Drive aligned with kindergarten screening; Families meet drivers; Children safely explore a bus; Build comfort before day one',
-        'Recruit where our audiences already gather; MRTA events; PTA meetings; Community fairs and faith-based events',
-        'Build trust in the hiring journey; Clear steps to apply; Transparent timelines; Consistent follow-up with candidates',
+        'Coordinate a Ride-and-Drive aligned with kindergarten screening; Families meet drivers; Children safely explore a bus; Build comfort before school starts',
+        'Recruit where our audiences already gather; MRTA events; PTA meetings; Community fairs and events',
+        'Build trust in the hiring process; Clear steps to apply; Transparent timelines; Consistent follow-up with candidates',
         'Time campaigns for interest spikes; Late spring push; Early fall booster; Refresh creative quarterly',
         'Align with district plan and brand standards; Consistent visuals and tone; Shared calendar with Communications'
       ]}
@@ -274,14 +274,14 @@ function Training(){
     <SectionPage
       title={"Training & Growth"}
       bullets={[
-        'Adopt a continuous growth mindset; Grounded in MOAPT, NAPT, MUSIC; Annual compliance refreshers',
+        'Adopt a continuous growth mindset; Grounded in best practices; Partner with MOAPT, NAPT and MUSIC; Annual compliance refreshers',
         'Strengthen professional communication; With students; With parents; With school staff',
         'Use positive reinforcement to shape behavior; Clear expectations; Consistent routines; Celebrate wins',
         'Practice conflict de-escalation; CPI strategies; Scenario-based drills; Radio protocols',
         'Complete mandatory reporter training; Annual refreshers; Quick-reference guides on each bus',
         'Provide health & safety certifications; First Aid and CPR; EpiPen and Narcan; Tourniquet use and wound packing',
-        'Serve students with disabilities with confidence; Understand disability categories; Appropriate supports; Collaboration with SPED teams',
-        'Rehearse emergency preparedness; Security protocols; Evacuation procedures; Comprehensive vehicle inspections',
+        'Serve students with disabilities with confidence; Understand disability categories; Provide needed supports; Collaboration with SPED teams',
+        'Rehearse emergency preparedness; Identify security protocols; Evaluate evacuation procedures; Conduct comprehensive vehicle inspections',
         'Grow bus operation skills; Coaching and ride-alongs; Skills competitions; Peer mentoring'
       ]}
     />
@@ -297,11 +297,10 @@ function Retention(){
         'Set high and equitable standards; Clear expectations for all roles; Support plans when needed; Fair and consistent accountability',
         'Invest in personal growth; Self-reflection prompts; Staff testimonials; Pathways for advancement',
         'Model positivity and equity; Kindness in every interaction; Inclusive language; Community-first mindset',
-        'Address concerns constructively; Listen first; Retraining where needed; Documented follow-up',
-        'Activate advisory voices; Transportation Advisory Committee (TAC); Surface issues and co-design solutions; Close the loop on feedback',
-        'Build community through fellowship; Volunteer groups (walking club, puzzle group); Welcome teams for new hires; Buddy system',
+        'Address concerns constructively; Listen first; Retrain as needed; Document follow-up; Utilize Transportation Advisory Committee (TAC)',
+        'Build community through fellowship; Volunteer groups (walking club, puzzle group); Welcome teams for new hires; Mentor program',
         'Create after-hours connections; Movie nights; Hayrack ride; Caroling and seasonal events',
-        'Serve the community together; Department service projects; Partnerships with local orgs; Share impact stories'
+        'Serve the community together; Department service projects; Partnerships with local organizations; Share impactful stories'
       ]}
     />
   );
@@ -313,11 +312,10 @@ function DataEval(){
       title={"Data & Evaluation"}
       bullets={[
         'Benchmark compensation; Regional salary study; Benefits comparison; Update annually',
-        'Gather satisfaction data twice a year; Staff survey; Parent survey; Student survey',
+        'Gather satisfaction annually; Staff survey; Parent survey; Student survey',
         'Learn from departures; Structured exit interviews; Theme analysis; Share lessons learned',
         'Maintain continuous feedback loops; TAC input; Student Advisory; Parent Advisory',
         'Evaluate field trips; Simple post-trip evaluation; Quick digital form; Share highlights with drivers',
-        'Close the loop with transparency; Quarterly summaries; Action items and owners; Track progress publicly'
       ]}
     />
   );
